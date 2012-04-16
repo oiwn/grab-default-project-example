@@ -1,0 +1,7 @@
+*.pyc
+*.log
+*.*~
+*.py#
+.hg
+.hgignore
+.git
