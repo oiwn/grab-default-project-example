@@ -6,6 +6,7 @@ from grab.spider import Spider
 
 from spiders.base import BaseHubSpider
 
+
 class ExploreSpider(BaseHubSpider):
     initial_urls = ['http://github.com/explore']
 

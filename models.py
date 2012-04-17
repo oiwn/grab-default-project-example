@@ -4,19 +4,12 @@ Models for default project
 """
 import datetime
 
-from sqlalchemy import create_engine
 from sqlalchemy.orm import relationship, backref
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy import (Column, Integer, Text, String, ForeignKey,
                         DateTime, PickleType, Table)
 
 Base = declarative_base()
-
-def init_engine():
-    db_engine = create_engine(
-        'sqlite+pysqlite:///data.sqlite', encoding='utf-8')
-    Base.metadata.create_all(db_engine)
-    return db_engine
 
     
 class Item(Base):
